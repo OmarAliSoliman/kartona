@@ -1,6 +1,8 @@
 $(document).ready(function () {
   // choses-slider
 
+  AOS.init();
+
   var currentDir = $("a").css("direction");
   console.log(currentDir);
 
@@ -64,6 +66,26 @@ $(document).ready(function () {
 
   $('.counter').counterUp({
     time: 1000
+  });
+
+
+  $(window).scroll(() => {
+    if ($(this).scrollTop() > 20) {
+      $(".navbar").addClass("fixed-navbar");
+      $("#floating").css("opacity", "0.8");
+    } else {
+      $(".navbar").removeClass("fixed-navbar");
+      $("#floating").css("opacity", "0");
+    }
+  });
+
+  $("#floating").click(() => {
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      50
+    );
   });
 
 });

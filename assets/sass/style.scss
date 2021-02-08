@@ -13,6 +13,11 @@ $secondColor: #fabb27;
   src: url("../fonts/NeoSansArabicMedium.ttf");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 input,
 select,
 textarea {
@@ -35,6 +40,26 @@ img {
   max-width: 100%;
   width: 100%;
 }
+
+#floating {
+  position: fixed;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  bottom: 15px;
+  right: 20px;
+  cursor: pointer;
+  background-color: $mainColor;
+  opacity: 0;
+  transition: all 0.5s;
+  i {
+    color: #fff;
+  }
+}
+
 
 // navbar
 
