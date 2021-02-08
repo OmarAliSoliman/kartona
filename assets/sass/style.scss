@@ -399,6 +399,7 @@ img {
     padding: 10px;
     left: 7px;
     top: 0;
+    z-index: 20 !important;
   }
 
   .swiper-slide-active::before {
@@ -408,7 +409,7 @@ img {
     height: 750px;
     top: -29px;
     left: -39px;
-    z-index: 99;
+    z-index: 99 !important;
   }
   .swiper-container-3d .swiper-slide-shadow-left,
   .swiper-container-3d .swiper-slide-shadow-right {
@@ -442,6 +443,15 @@ img {
     bottom: -50px;
     width: 401px;
     height: 369px;
+  }
+  .frame{
+    position: absolute;
+    width: 284px;
+    height: 519px;
+    z-index: 1;
+    left: 51.5%;
+    transform: translate(-50%, 0);
+    bottom: 62px
   }
 }
 
@@ -1012,6 +1022,17 @@ footer {
   }
   .download-our-app {
     padding-bottom: 30px;
+  }
+  .monitor{
+    .frame{
+      position: absolute;
+      width: 286px;
+      height: 520px;
+      z-index: 1;
+      left: 54.5%;
+      transform: translate(-50%, 0);
+      bottom: 62px;
+    }
   }
 }
 
