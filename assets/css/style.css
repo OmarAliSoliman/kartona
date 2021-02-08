@@ -420,7 +420,7 @@ img {
   color: #fff;
   margin: 0;
 }
-.statics-parent .statics .card .card-text {
+.statics-parent .statics .card .card-text .counter {
   font-size: 45px;
   color: #fabb27;
   margin: 0;
@@ -738,9 +738,6 @@ footer ul li a {
   .header .header-img .header-phone {
     display: none;
   }
-  .header .header-img .whatsapp-img {
-    top: 180px;
-  }
 
   .som-features .main-card {
     margin-bottom: 20px;
@@ -794,6 +791,10 @@ footer ul li a {
   .testemonia .testemonia-cards-slider .slick-prev {
     left: 45% !important;
   }
+
+  .download-our-app {
+    background-attachment: unset;
+  }
 }
 @media (max-width: 524px) {
   .navbar {
@@ -808,9 +809,23 @@ footer ul li a {
     margin-top: 20px;
   }
   .navbar .social .nav-link i {
-    background-color: #fabb27;
+    background-color: #fff;
   }
 
+  .header-parent .header .header-content h5 {
+    color: #fabb27 !important;
+    margin-top: 40px;
+  }
+  .header-parent .header .header-content h5 span {
+    color: #0d1435;
+  }
+
+  .header {
+    background-image: url("../images/choice.png");
+    background-position: right;
+    background-size: cover;
+    margin-top: -10px;
+  }
   .header .header-content {
     padding-top: 210px !important;
     text-align: center;
@@ -869,6 +884,21 @@ footer ul li a {
 
   .download-our-app {
     padding-bottom: 30px;
+  }
+}
+@media (max-width: 376px) {
+  .header-parent .header .header-content h5 {
+    margin-top: 70px;
+    position: relative;
+    z-index: 7;
+  }
+}
+@media (max-width: 321px) {
+  .header-parent .header .header-content h5 {
+    margin-top: 90px;
+    position: relative;
+    z-index: 7;
+    font-size: 40px;
   }
 }
 

@@ -44,19 +44,26 @@ $(document).ready(function () {
     });
   }
 
-  var swiper = new Swiper(".swiper-container.two", {
-    pagination: ".swiper-pagination",
-    paginationClickable: true,
-    effect: "coverflow",
+  var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
     loop: true,
     centeredSlides: true,
-    slidesPerView: "auto",
-    coverflow: {
+    slidesPerView: 'auto',
+    coverflowEffect: {
       rotate: 0,
-      stretch: 100,
+      stretch: 20,
       depth: 150,
       modifier: 1.5,
-      slideShadows: false,
+      slideShadows: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
     },
   });
+
+  $('.counter').counterUp({
+    time: 1000
+  });
+
 });

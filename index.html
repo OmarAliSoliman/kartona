@@ -45,6 +45,10 @@
     </div>
   </nav>
 
+  <a href="https://wa.me/+1098586783" target="_blank">
+    <img src="./assets/images/header-whatsapp.png" class="whatsapp-img" alt="">
+  </a>
+
   <!-- header -->
   <div class="header-parent">
     <div class="header">
@@ -71,9 +75,6 @@
             style="background-image: url('./assets/images/choice.png');">
             <div>
               <img class="header-phone" src="./assets/images/header-img.png" alt="">
-              <a href="https://wa.me/+1098586783" target="_blank">
-                <img src="./assets/images/header-whatsapp.png" class="whatsapp-img" alt="">
-              </a>
             </div>
           </div>
         </div>
@@ -269,7 +270,7 @@
                 <img src="./assets/images/consumer.png" alt="">
               </div>
               <h5 class="card-title">حجم العملاء</h5>
-              <p class="card-text">+3000 <span>تاجر</span></p>
+              <p class="card-text"> <span class="counter">3000</span> <span>تاجر</span></p>
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4">
@@ -278,7 +279,7 @@
                 <img src="./assets/images/eco-factory.png" alt="">
               </div>
               <h5 class="card-title">عدد المصانع</h5>
-              <p class="card-text">+1000 <span>مصنع</span></p>
+              <p class="card-text"> <span class="counter">1000</span> <span>مصنع</span></p>
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4">
@@ -287,7 +288,7 @@
                 <img src="./assets/images/web-search-engine.png" alt="">
               </div>
               <h5 class="card-title">عدد الزيارات الشهرية</h5>
-              <p class="card-text">1.50 <span>مليون</span></p>
+              <p class="card-text"> <span class="counter">1.50</span> <span>مليون</span></p>
             </div>
           </div>
         </div>
@@ -505,37 +506,14 @@
   </footer>
 
   <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
   <script src="./assets/js/popper.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
   <script src="./assets/js/slick.min.js"></script>
   <script src="./assets/js/swiper.min.js"></script>
+  <script src="./assets/js/jquery.counterup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
   <script src="./assets/js/main.js"></script>
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      effect: 'coverflow',
-      grabCursor: true,
-      loop: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 20,
-        depth: 150,
-        modifier: 1.5,
-        slideShadows: true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
-    //pricing-tab-switcher
-
-    $('.pricing-tab-switcher').on('click', function () {
-      $(this).toggleClass('active');
-
-      $('.pricing-amount').toggleClass('change-subs-duration');
-    });
-  </script>
 </body>
 
 </html>
