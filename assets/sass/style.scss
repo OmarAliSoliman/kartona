@@ -369,6 +369,7 @@ img {
 // monitor
 .monitor {
   margin-top: 130px;
+  position: relative;
   .section-header {
     h5 {
       &::before {
@@ -383,7 +384,7 @@ img {
   .swiper-container {
     width: 100%;
     padding-top: 15px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
   }
 
   .swiper-slide {
@@ -405,7 +406,7 @@ img {
     position: absolute;
     width: 400px;
     height: 750px;
-    top: -39px;
+    top: -29px;
     left: -39px;
     z-index: 99;
   }
@@ -414,28 +415,33 @@ img {
     background-image: none;
   }
   .swiper-pagination-bullet {
-    width: 36px;
-    height: 5px;
-    border-radius: 3px;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    display: inline-block;
+    height: 8px;
+    opacity: 1;
+    width: 26px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
   }
   .swiper-pagination-bullet-active {
-    background: #ff3494;
+    background: #fff;
+    background: #fff;
+    border: medium none;
+    height: 8px;
+    opacity: 1;
+    width: 51px;
   }
 
-  .monitor-img {
-    margin-top: 38px;
-  }
-  .monitor-img-parent {
-    position: relative;
-    &::after {
-      content: url("../images/monitor.png");
-      position: absolute;
-      height: 370px;
-      z-index: -1;
-      left: 50%;
-      transform: translate(-50%, 0);
-      bottom: -90px;
-    }
+  .monitor-after {
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: -50px;
+    width: 401px;
+    height: 369px;
   }
 }
 
