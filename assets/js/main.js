@@ -1,7 +1,7 @@
 $(document).ready(function () {
   // choses-slider
 
-  var currentDir = $('a').css('direction');
+  var currentDir = $("a").css("direction");
   console.log(currentDir);
 
   if ($(".testemonia-cards-slider").length) {
@@ -11,7 +11,7 @@ $(document).ready(function () {
       speed: 300,
       slidesToShow: 3,
       slidesToScroll: 1,
-      rtl: currentDir == 'rtl' ? true:false,
+      rtl: currentDir == "rtl" ? true : false,
       autoplay: true,
       arrows: true,
       loop: true,
@@ -44,23 +44,19 @@ $(document).ready(function () {
     });
   }
 
-
-  var swiper = new Swiper('.swiper-container', {
-    effect: 'coverflow',
-    grabCursor: true,
+  var swiper = new Swiper(".swiper-container.two", {
+    pagination: ".swiper-pagination",
+    paginationClickable: true,
+    effect: "coverflow",
+    loop: true,
     centeredSlides: true,
-    slidesPerView: 'auto',
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-    },
-    pagination: {
-      el: '.swiper-pagination',
+    slidesPerView: "auto",
+    coverflow: {
+      rotate: 0,
+      stretch: 100,
+      depth: 150,
+      modifier: 1.5,
+      slideShadows: false,
     },
   });
-
-
 });

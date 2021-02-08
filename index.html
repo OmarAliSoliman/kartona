@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./assets/css/all.min.css">
   <link rel="stylesheet" href="./assets/css/slick.css">
   <link rel="stylesheet" href="./assets/css/slick-theme.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/swiper.css" />
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Document</title>
 </head>
@@ -240,18 +240,16 @@
         <h5>واجهات تطبيق <span>كرتونة</span> ؟</h5>
         <p>واجهات بسيطة وسهلة الإستخدام وتفاعلية مع المستخدم</p>
       </div>
-      <!-- <div class="swiper-container">
+      <div class="swiper-container">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image:url(./assets/images/slider-1.png)"></div>
-          <div class="swiper-slide" style="background-image:url(./assets/images/slider-2.png)"></div>
-          <div class="swiper-slide" style="background-image:url(./assets/images/slider-3.png)"></div>
-          <div class="swiper-slide" style="background-image:url(./assets/images/slider-4.png)"></div>
-          <div class="swiper-slide" style="background-image:url(./assets/images/slider-5.png)"></div>
+          <div class="swiper-slide"><img src="./assets/images/slider-1.png" alt="slide 1"></div>
+          <div class="swiper-slide"><img src="./assets/images/slider-2.png" alt="slide 1"></div>
+          <div class="swiper-slide"><img src="./assets/images/slider-3.png" alt="slide 1"></div>
+          <div class="swiper-slide"><img src="./assets/images/slider-4.png" alt="slide 1"></div>
+          <div class="swiper-slide"><img src="./assets/images/slider-5.png" alt="slide 1"></div>
         </div>
+        <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
-      </div> -->
-      <div class="monitor-img-parent">
-        <img class="monitor-img" src="./assets/images/monitoe.png" alt="">
       </div>
     </div>
   </div>
@@ -509,8 +507,34 @@
   <script src="./assets/js/popper.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
   <script src="./assets/js/slick.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/js/swiper.min.js"></script>
   <script src="./assets/js/main.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      loop: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 20,
+        depth: 150,
+        modifier: 1.5,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+    //pricing-tab-switcher
+
+    $('.pricing-tab-switcher').on('click', function () {
+      $(this).toggleClass('active');
+
+      $('.pricing-amount').toggleClass('change-subs-duration');
+    });
+  </script>
 </body>
 
 </html>
