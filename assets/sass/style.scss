@@ -81,6 +81,7 @@ img {
         text-align: center;
         line-height: 36px;
         color: $mainColor;
+        transition: all .5s ease;
         clip-path: polygon(
           25% 0%,
           75% 0%,
@@ -90,6 +91,10 @@ img {
           0% 50%
         );
         border-radius: 15px;
+        &:hover{
+          clip-path: none !important;
+          border-radius: 0;
+        }
       }
     }
   }
@@ -114,7 +119,7 @@ img {
       }
       p {
         margin-bottom: 90px;
-        font-size: 19px;
+        font-size: 22px;
         color: #0d1435;
       }
       .header-download {
@@ -126,6 +131,10 @@ img {
           img {
             width: auto;
             height: auto;
+            transition: all .5s ease;
+            &:hover{
+              transform: translateY(-5px);
+            }
           }
         }
       }
@@ -365,6 +374,7 @@ img {
         padding-right: 110px;
         margin-bottom: 20px;
         height: 100px;
+        transition: all .5s ease !important;
         .card-img {
           width: 95px;
           height: 95px;
@@ -385,6 +395,11 @@ img {
           font-size: 16px;
           font-family: mainfontmed;
           line-height: 25px;
+        }
+        &:hover{
+          background-color: #fff;
+          border-radius: 17px;
+          box-shadow: 0 6px 22px rgba(8, 21, 43, 14%);
         }
       }
     }
@@ -559,6 +574,7 @@ img {
       padding-top: 35px;
       margin-bottom: 45px;
       // padding-bottom: 55px;
+      transition: all .5s ease !important;
       border: 0;
       .card-img {
         // border: 1px solid #000;
@@ -582,6 +598,9 @@ img {
       .card-text {
         font-size: 16px;
         color: $mainColor;
+      }
+      &:hover{
+        box-shadow: 0 6px 22px rgba(8, 21, 43, 14%);
       }
     }
     .card-left {
@@ -723,6 +742,10 @@ img {
       img {
         width: auto;
         height: auto;
+        transition: all .5s ease;
+        &:hover{
+          transform: translateY(-5px);
+        }
       }
     }
   }
@@ -738,6 +761,8 @@ img {
       font-size: 30px;
       font-family: mainfontmed;
       width: 65%;
+      z-index: 9;
+      direction: ltr !important;
       span {
         font-family: mainfont;
       }
@@ -787,7 +812,7 @@ img {
       font-family: mainfontmed;
       margin-bottom: 28px;
       span {
-        background-color: $secondColor;
+        color: $secondColor;
       }
     }
     label {
@@ -808,43 +833,48 @@ img {
         color: $mainColor;
         width: 174px;
         font-family: mainfontmed;
+        &:hover{
+          background-color: transparent;
+          color: $mainColor;
+          border: 1px solid $secondColor;
+        }
       }
     }
   }
 }
 
-.are-you{
-  background-color: $secondColor;
-  padding: 20px;
-  margin-top: 90px;
-  text-align: center;
-  padding-top: 70px;
-  padding-bottom: 70px;
-  h5, p{
-    color: $mainColor;
-  }
-  h5{
-    font-size: 30px;
-    margin-bottom: 20px;
-    font-family: mainfontmed;
-  }
-  p{
-    line-height: 30px;
-  }
-  .btn{
-    background-color: $mainColor;
-    color: #fff;
-    height: 50px;
-    width: 300px;
-    line-height: 35px;
-    margin-top: 20px;
-    &:hover{
-      color: $mainColor;
-      background-color: transparent;
-      border: 1px solid $mainColor;
-    }
-  }
-}
+// .are-you{
+//   background-color: $secondColor;
+//   padding: 20px;
+//   margin-top: 90px;
+//   text-align: center;
+//   padding-top: 70px;
+//   padding-bottom: 70px;
+//   h5, p{
+//     color: $mainColor;
+//   }
+//   h5{
+//     font-size: 30px;
+//     margin-bottom: 20px;
+//     font-family: mainfontmed;
+//   }
+//   p{
+//     line-height: 30px;
+//   }
+//   .btn{
+//     background-color: $mainColor;
+//     color: #fff;
+//     height: 50px;
+//     width: 300px;
+//     line-height: 35px;
+//     margin-top: 20px;
+//     &:hover{
+//       color: $mainColor;
+//       background-color: transparent;
+//       border: 1px solid $mainColor;
+//     }
+//   }
+// }
 
 footer {
   background-size: cover;
@@ -871,7 +901,8 @@ footer {
         background-color: $secondColor;
         text-align: center;
         line-height: 36px;
-        color: $mainColor;
+        color: $mainColor !important;
+        transition: all .2s ease;
         clip-path: polygon(
           25% 0%,
           75% 0%,
@@ -881,6 +912,10 @@ footer {
           0% 50%
         );
         border-radius: 15px;
+        &:hover{
+          clip-path: none !important;
+          border-radius: 0;
+        }
       }
     }
   }

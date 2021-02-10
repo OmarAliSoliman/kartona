@@ -74,8 +74,13 @@ img {
   text-align: center;
   line-height: 36px;
   color: #0d1435;
+  transition: all 0.5s ease;
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   border-radius: 15px;
+}
+.navbar .nav-item .nav-link i:hover {
+  clip-path: none !important;
+  border-radius: 0;
 }
 
 .header-parent {
@@ -98,7 +103,7 @@ img {
 }
 .header-parent .header .header-content p {
   margin-bottom: 90px;
-  font-size: 19px;
+  font-size: 22px;
   color: #0d1435;
 }
 .header-parent .header .header-content .header-download h5 {
@@ -108,6 +113,10 @@ img {
 .header-parent .header .header-content .header-download a img {
   width: auto;
   height: auto;
+  transition: all 0.5s ease;
+}
+.header-parent .header .header-content .header-download a img:hover {
+  transform: translateY(-5px);
 }
 .header-parent .header .header-img {
   height: 832px;
@@ -321,6 +330,7 @@ img {
   padding-right: 110px;
   margin-bottom: 20px;
   height: 100px;
+  transition: all 0.5s ease !important;
 }
 .all-features .all-features-content .all-features-cards .card .card-img {
   width: 95px;
@@ -342,6 +352,11 @@ img {
   font-size: 16px;
   font-family: mainfontmed;
   line-height: 25px;
+}
+.all-features .all-features-content .all-features-cards .card:hover {
+  background-color: #fff;
+  border-radius: 17px;
+  box-shadow: 0 6px 22px rgba(8, 21, 43, 0.14);
 }
 
 .monitor {
@@ -489,6 +504,7 @@ img {
   border-radius: 17px;
   padding-top: 35px;
   margin-bottom: 45px;
+  transition: all 0.5s ease !important;
   border: 0;
 }
 .our-services .our-services-cards .card .card-img {
@@ -512,6 +528,9 @@ img {
 .our-services .our-services-cards .card .card-text {
   font-size: 16px;
   color: #0d1435;
+}
+.our-services .our-services-cards .card:hover {
+  box-shadow: 0 6px 22px rgba(8, 21, 43, 0.14);
 }
 .our-services .our-services-cards .card-left .card {
   width: 350px;
@@ -640,6 +659,10 @@ img {
 .download-our-app .down a img {
   width: auto;
   height: auto;
+  transition: all 0.5s ease;
+}
+.download-our-app .down a img:hover {
+  transform: translateY(-5px);
 }
 
 .contact {
@@ -652,6 +675,8 @@ img {
   font-size: 30px;
   font-family: mainfontmed;
   width: 65%;
+  z-index: 9;
+  direction: ltr !important;
 }
 .contact .contact-contetn h5 span {
   font-family: mainfont;
@@ -693,7 +718,7 @@ img {
   margin-bottom: 28px;
 }
 .contact .contact-form h5 span {
-  background-color: #fabb27;
+  color: #fabb27;
 }
 .contact .contact-form label {
   font-size: 16px;
@@ -713,38 +738,10 @@ img {
   width: 174px;
   font-family: mainfontmed;
 }
-
-.are-you {
-  background-color: #fabb27;
-  padding: 20px;
-  margin-top: 90px;
-  text-align: center;
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-.are-you h5, .are-you p {
-  color: #0d1435;
-}
-.are-you h5 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  font-family: mainfontmed;
-}
-.are-you p {
-  line-height: 30px;
-}
-.are-you .btn {
-  background-color: #0d1435;
-  color: #fff;
-  height: 50px;
-  width: 300px;
-  line-height: 35px;
-  margin-top: 20px;
-}
-.are-you .btn:hover {
-  color: #0d1435;
+.contact .contact-form .btn-submit .btn:hover {
   background-color: transparent;
-  border: 1px solid #0d1435;
+  color: #0d1435;
+  border: 1px solid #fabb27;
 }
 
 footer {
@@ -774,9 +771,14 @@ footer ul li a {
   background-color: #fabb27;
   text-align: center;
   line-height: 36px;
-  color: #0d1435;
+  color: #0d1435 !important;
+  transition: all 0.2s ease;
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   border-radius: 15px;
+}
+footer ul li a:hover {
+  clip-path: none !important;
+  border-radius: 0;
 }
 
 @media (max-width: 1024px) {
