@@ -330,7 +330,6 @@ img {
   padding-right: 110px;
   margin-bottom: 20px;
   height: 100px;
-  transition: all 0.5s ease !important;
 }
 .all-features .all-features-content .all-features-cards .card .card-img {
   width: 95px;
@@ -342,6 +341,7 @@ img {
   position: absolute;
   right: 0;
   top: 0;
+  transition: all 0.5s ease !important;
 }
 .all-features .all-features-content .all-features-cards .card .card-img img {
   width: auto;
@@ -353,10 +353,11 @@ img {
   font-family: mainfontmed;
   line-height: 25px;
 }
-.all-features .all-features-content .all-features-cards .card:hover {
-  background-color: #fff;
-  border-radius: 17px;
-  box-shadow: 0 6px 22px rgba(8, 21, 43, 0.14);
+.all-features .all-features-content .all-features-cards .card:hover .card-img {
+  background-color: #0d1435;
+}
+.all-features .all-features-content .all-features-cards .card:hover .card-img img {
+  filter: brightness(0) invert(1);
 }
 
 .monitor {
@@ -509,10 +510,21 @@ img {
 }
 .our-services .our-services-cards .card .card-img {
   height: 80px;
+  position: relative;
 }
-.our-services .our-services-cards .card .card-img img {
+.our-services .our-services-cards .card .card-img .ser-img {
   width: auto;
   height: auto;
+  position: relative;
+  z-index: 9;
+}
+.our-services .our-services-cards .card .card-img .serv-bf {
+  transition: all 0.5s ease;
+  width: 62px !important;
+  height: 57px !important;
+  position: absolute;
+  left: 110px;
+  opacity: 0;
 }
 .our-services .our-services-cards .card .card-title,
 .our-services .our-services-cards .card .card-text {
@@ -531,6 +543,12 @@ img {
 }
 .our-services .our-services-cards .card:hover {
   box-shadow: 0 6px 22px rgba(8, 21, 43, 0.14);
+}
+.our-services .our-services-cards .card:hover .card-img {
+  position: relative;
+}
+.our-services .our-services-cards .card:hover .card-img .serv-bf {
+  opacity: 0.9;
 }
 .our-services .our-services-cards .card-left .card {
   width: 350px;
@@ -796,6 +814,10 @@ footer ul li a:hover {
   .statics-parent .statics .card .card-text {
     font-size: 30px;
   }
+
+  .our-services .our-services-cards .card .card-img .serv-bf {
+    left: 90px;
+  }
 }
 @media (max-width: 800px) {
   .header .header-content {
@@ -963,6 +985,10 @@ footer ul li a:hover {
     left: 54.5%;
     transform: translate(-50%, 0);
     bottom: 62px;
+  }
+
+  .our-services .our-services-cards .card .card-img .serv-bf {
+    left: 120px;
   }
 }
 @media (max-width: 376px) {

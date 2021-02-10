@@ -374,7 +374,6 @@ img {
         padding-right: 110px;
         margin-bottom: 20px;
         height: 100px;
-        transition: all .5s ease !important;
         .card-img {
           width: 95px;
           height: 95px;
@@ -385,6 +384,7 @@ img {
           position: absolute;
           right: 0;
           top: 0;
+          transition: all .5s ease !important;
           img {
             width: auto;
             height: auto;
@@ -397,9 +397,15 @@ img {
           line-height: 25px;
         }
         &:hover{
-          background-color: #fff;
-          border-radius: 17px;
-          box-shadow: 0 6px 22px rgba(8, 21, 43, 14%);
+          // background-color: #fff;
+          // border-radius: 17px;
+          // box-shadow: 0 6px 22px rgba(8, 21, 43, 14%);
+          .card-img{
+            background-color: $mainColor;
+            img{
+              filter: brightness(0) invert(1);
+            }
+          }
         }
       }
     }
@@ -579,9 +585,20 @@ img {
       .card-img {
         // border: 1px solid #000;
         height: 80px;
-        img {
+        position: relative;
+        .ser-img {
           width: auto;
           height: auto;
+          position: relative;
+          z-index: 9;
+        }
+        .serv-bf{
+          transition: all .5s ease;
+          width: 62px !important;
+          height: 57px !important;
+          position: absolute;
+          left: 110px;
+          opacity: 0;
         }
       }
       .card-title,
@@ -601,6 +618,12 @@ img {
       }
       &:hover{
         box-shadow: 0 6px 22px rgba(8, 21, 43, 14%);
+        .card-img{
+          position: relative;
+          .serv-bf{
+            opacity: .9;
+          }
+        }
       }
     }
     .card-left {
@@ -941,6 +964,9 @@ footer {
       }
     }
   }
+  .our-services .our-services-cards .card .card-img .serv-bf{
+    left: 90px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -1128,6 +1154,9 @@ footer {
       transform: translate(-50%, 0);
       bottom: 62px;
     }
+  }
+  .our-services .our-services-cards .card .card-img .serv-bf{
+    left: 120px;
   }
 }
 
