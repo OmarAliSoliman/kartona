@@ -646,6 +646,9 @@ img {
 .contact {
   margin-top: 130px;
 }
+.contact .contact-contetn .conract-header {
+  margin-bottom: 90px;
+}
 .contact .contact-contetn h5 {
   font-size: 30px;
   font-family: mainfontmed;
@@ -658,7 +661,6 @@ img {
   margin-top: 32px;
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 93px;
   width: 90%;
 }
 .contact .contact-contetn .card {
@@ -711,6 +713,39 @@ img {
   color: #0d1435;
   width: 174px;
   font-family: mainfontmed;
+}
+
+.are-you {
+  background-color: #fabb27;
+  padding: 20px;
+  margin-top: 90px;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.are-you h5, .are-you p {
+  color: #0d1435;
+}
+.are-you h5 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: mainfontmed;
+}
+.are-you p {
+  line-height: 30px;
+}
+.are-you .btn {
+  background-color: #0d1435;
+  color: #fff;
+  height: 50px;
+  width: 300px;
+  line-height: 35px;
+  margin-top: 20px;
+}
+.are-you .btn:hover {
+  color: #0d1435;
+  background-color: transparent;
+  border: 1px solid #0d1435;
 }
 
 footer {

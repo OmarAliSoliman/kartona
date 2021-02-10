@@ -731,6 +731,9 @@ img {
 .contact {
   margin-top: 130px;
   .contact-contetn {
+    .conract-header{
+      margin-bottom: 90px;
+    }
     h5 {
       font-size: 30px;
       font-family: mainfontmed;
@@ -743,7 +746,6 @@ img {
       margin-top: 32px;
       font-size: 18px;
       line-height: 30px;
-      margin-bottom: 93px;
       width: 90%;
     }
     .card {
@@ -807,6 +809,39 @@ img {
         width: 174px;
         font-family: mainfontmed;
       }
+    }
+  }
+}
+
+.are-you{
+  background-color: $secondColor;
+  padding: 20px;
+  margin-top: 90px;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  h5, p{
+    color: $mainColor;
+  }
+  h5{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: mainfontmed;
+  }
+  p{
+    line-height: 30px;
+  }
+  .btn{
+    background-color: $mainColor;
+    color: #fff;
+    height: 50px;
+    width: 300px;
+    line-height: 35px;
+    margin-top: 20px;
+    &:hover{
+      color: $mainColor;
+      background-color: transparent;
+      border: 1px solid $mainColor;
     }
   }
 }
