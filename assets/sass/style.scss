@@ -140,6 +140,7 @@ img {
       }
     }
     .header-img {
+      background-image: url('../images/choice.png');
       height: 832px;
       padding-left: 0;
       background-position: right;
@@ -553,8 +554,8 @@ img {
 }
 
 .our-services {
-  margin-top: 80px;
-  background-color: #f9f9f9;
+  // margin-top: 30px;
+  // background-color: #f9f9f9;
   padding-top: 195px;
   // margin-top: -100px;
   padding-bottom: 84px;
@@ -582,6 +583,8 @@ img {
       // padding-bottom: 55px;
       transition: all .5s ease !important;
       border: 0;
+      border: 1px solid #D5D5D5;
+
       .card-img {
         // border: 1px solid #000;
         height: 80px;
@@ -615,9 +618,12 @@ img {
       .card-text {
         font-size: 16px;
         color: $mainColor;
+        width: 80%;
+        margin: auto;
       }
       &:hover{
         box-shadow: 0 6px 22px rgba(8, 21, 43, 14%);
+        border: 1px solid #fff;
         .card-img{
           position: relative;
           .serv-bf{
