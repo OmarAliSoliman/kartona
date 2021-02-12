@@ -714,7 +714,7 @@ img {
   font-family: mainfontmed;
   width: 65%;
   z-index: 9;
-  direction: rtl !important;
+  direction: ltr !important;
 }
 .contact .contact-contetn h5 span {
   font-family: mainfont;
