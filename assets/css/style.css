@@ -82,6 +82,17 @@ img {
   clip-path: none !important;
   border-radius: 0;
 }
+.navbar .nav-item:last-child .nav-link {
+  display: inline-block;
+  width: 39px;
+  height: 36px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 36px;
+  color: #0d1435;
+  border-radius: 15px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
 
 .header-parent {
   overflow: hidden;
@@ -506,7 +517,7 @@ img {
   margin-bottom: 45px;
   transition: all 0.5s ease !important;
   border: 0;
-  border: 1px solid #D5D5D5;
+  border: 1px solid #d5d5d5;
 }
 .our-services .our-services-cards .card .card-img {
   height: 80px;
@@ -615,17 +626,17 @@ img {
 .testemonia .testemonia-cards .testemonia-cards-slider .slider-item .card .card-img {
   position: absolute;
   right: -30px;
-}
-.testemonia .testemonia-cards .testemonia-cards-slider .slider-item .card .card-img img {
   width: 93px;
   height: 93px;
   border-radius: 12px;
+  background-size: cover;
+  background-position: top;
 }
 .testemonia .testemonia-cards .testemonia-cards-slider .slider-item .card .pua {
   position: absolute;
   width: 54px;
   height: 182px;
-  left: 90px;
+  left: 50px;
   top: 0px;
 }
 .testemonia .testemonia-cards .testemonia-cards-slider .slider-item .card .card-text {
