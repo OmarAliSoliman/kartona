@@ -960,7 +960,7 @@ footer ul li a:hover {
   }
 
   .section-header h5::before {
-    left: -5px;
+    left: -25px;
   }
 
   .statics-parent .statics .card {
